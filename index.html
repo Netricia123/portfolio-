@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ita Patricia Etim | Portfolio</title>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Ita Patricia Etim</div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>   
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <main class="hero-section">
+        <div class="intro-left">
+            <div class="profile-image">
+                <div class="image-placeholder"></div>
+            </div> 
+        </div>
+        <div class="intro-right">
+            <h1>Hello! I'm Netricia</h1>
+            <p id="typewriter-bio"></p>
+            <div class="trait-circles">
+                <div class="circle">Problem-Solving</div>
+                <div class="circle">User-Empathy</div>
+                <div class="circle">Adaptability</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="contact-footer">
+        <div class="footer-pill">
+            <strong>Contact</strong>
+            <span>+234 902 295 4055</span>
+        </div>
+        <div class="footer-pill">
+            <strong>Mail</strong>
+            <span>triciaita22@gmail.com</span>
+        </div>
+        <div class="footer-pill">
+            <strong>Connect</strong>
+            <span>GitHub / <a href="www.linkedin.com/in/netricia-ita">LinkedIn</a></span>
+        </div>
+    </footer>
+
+    <script>
+        const bioText = "I am a dedicated software engineering developer focused on the user experience. I believe effective programming starts with simplicity and clarity, ensuring every digital solution is intuitive and easy to use. I'm currently expanding my skill set to transform basic concepts into robust, user-friendly designs.";
+        let i = 0;
+        const speed = 20;
+
+        function typeWriter() {
+            if (i < bioText.length) {
+                document.getElementById("typewriter-bio").innerHTML += bioText.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        window.onload = typeWriter;
+    </script>
+</body>
+</html>

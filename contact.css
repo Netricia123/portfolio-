@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Contact Terminal Center Card
+   ========================================================================== */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.contact-title {
+    font-size: 1.8rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 35px;
+    color: #000000;
+    text-align: center;
+}
+
+/* Master Node Geometric Layout Link Box */
+.contact-circle {
+    width: 360px;
+    height: 360px;
+    background: linear-gradient(135deg, #ec008c, #7000FF);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    border: 2px solid rgba(255,255,255,0.1);
+    transition: transform 0.4s ease;
+}
+
+.contact-circle:hover {
+    transform: rotate(2deg) scale(1.02);
+}
+
+.contact-circle h2, .contact-circle h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fc6767;
+}
+
+.contact-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    margin: 8px 0;
+    transition: color 0.2s;
+    font-family: monospace;
+}
+
+.contact-link:hover {
+    color: #fc6767;
+    text-decoration: underline;
+}
+
+.sub-text {
+    font-size: 0.75rem;
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.4;
+}
+
+.footer-note {
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ffffff;
+    opacity: 0.85;
+    padding: 0 20px;
+}
+
+@media(max-width: 480px){
+    .contact-circle {
+        width: 290px;
+        height: 290px;
+        padding: 20px;
+    }
+    .contact-title {
+        font-size: 1.4rem;
+    }
+}

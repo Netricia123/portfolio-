@@ -1,0 +1,128 @@
+.projects-main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+.projects-main-content h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #1a1b25;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+
+.project-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* This prevents the text from floating awkwardly and leaving excess space */
+    justify-content: center;
+    width: 100%;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+/* Alternating flip layout */
+.project-row.reverse {
+    flex-direction: row-reverse;
+}
+
+#content-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+}
+
+#content-box h3 {
+    font-size: 1.4rem;
+    color: #1a1b25;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+#content-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4a4c5a;
+    margin-bottom: 15px;
+}
+
+#img-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.original-img-placeholder {
+    width: 100%;
+    max-width: 460px;
+    height: 280px;
+    background: #e4e7eb;
+    border: 2px dashed #a0aec0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+/* Restrains any image inside the placeholder box to fit perfectly */
+.original-img-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Keeps the aspect ratio of your app screens perfect without distortion */
+    border-radius: 10px; /* Optional: smooths out the image corners to match the card */
+}
+
+/* Bottom Action Layout Links */
+.contact-footer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    background: rgba(0,0,0,0.02);
+    flex-wrap: wrap;
+}
+
+.footer-pill {
+    background-color: #fc6767;
+    color: #1a1b25;
+    width: 320px;
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e4e7eb;
+}
+
+.footer-pill p {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .project-row, .project-row.reverse {
+        flex-direction: column;
+        gap: 30px;
+    }
+    #content-box {
+        text-align: center;
+    }
+}
